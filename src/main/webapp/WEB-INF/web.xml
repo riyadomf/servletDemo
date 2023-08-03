@@ -14,7 +14,6 @@
     <servlet-name>abc</servlet-name>
     <servlet-class>servlet.first.AddServlet</servlet-class>
   </servlet>
-
   <servlet-mapping>
     <servlet-name>abc</servlet-name>
     <url-pattern>/add</url-pattern>
@@ -29,4 +28,10 @@
     <servlet-name>pqr</servlet-name>
     <url-pattern>/sq</url-pattern>
   </servlet-mapping>
+
+  <context-param>
+    <param-name>name</param-name>
+    <param-value>riyadomf</param-value>
+  </context-param>
+
 </web-app>
