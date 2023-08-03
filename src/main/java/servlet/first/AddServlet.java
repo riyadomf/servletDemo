@@ -1,6 +1,7 @@
 package servlet.first;
 
 import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
@@ -10,8 +11,8 @@ import java.io.PrintWriter;
 
 public class AddServlet extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
-        ServletContext ctx = getServletContext();     // getServletContext implemented in HttpServlet
-        String str = ctx.getInitParameter("name");
+        ServletConfig cg = getServletConfig();     // getServletContext implemented in HttpServlet
+        String str = cg.getInitParameter("name");
 
         PrintWriter out = res.getWriter();
         out.print("Hi " + str);

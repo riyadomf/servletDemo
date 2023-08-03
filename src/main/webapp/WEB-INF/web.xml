@@ -13,6 +13,12 @@
   <servlet>
     <servlet-name>abc</servlet-name>
     <servlet-class>servlet.first.AddServlet</servlet-class>
+
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>Omar Faruqe Riyad</param-value>
+    </init-param>
+
   </servlet>
   <servlet-mapping>
     <servlet-name>abc</servlet-name>
